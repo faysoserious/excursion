@@ -1,0 +1,43 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+/*--------first header----------------*/
+header {
+    height: 64px;
+    width: 100%;
+    
+}
+/*---------web header-----------------*/
+nav.mobile {
+    display: none;
+}
+.nav-bar {
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+.brand h1{
+    margin: 0;
+    text-transform: uppercase;
+}
+.brand span{
+    font-weight: 400;
+    color: gainsboro;
+}
+ul li {
+    display: inline-block;
+    padding-left: 16px;
+}
+
+/*----------mobile header-------------*/
+@media only screen and (max-width: 480px) {
+    nav.web {
+        display: none;
+    }
+}
