@@ -1,0 +1,45 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 50px;
+    color: white;
+
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 42px;
+    color: white;
+}
+
+p {
+    font-size: 21px;
+    color: gray;
+}
+
+a {
+    color: aquamarine;
+    font-size: 16px;
+}
+/*-------------header-----------------------*/
+header {
+    text-align: center;
+}
+
+/*-------------main-----------------------*/
+section {
+    text-align: center;
+}
+
+#download .image {
+    padding: 1rem;
+
+}
+
+footer p {
+    float: right;
+}
