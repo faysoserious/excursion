@@ -1,30 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+ 
 html {
     font-family: 'Open Sans', sans-serif;
+    overflow: scroll;
 }
-/*--------first header----------------*/
+*,
+html {
+    box-sizing: border-box;
+}
+
 header {
     height: 64px;
     width: 100%;
     position: fixed;
+    top: 0px;
     z-index: 100;
+    background-color: white;
     
 }
-/*---------web header-----------------*/
 
+main {
+    position: relative;
+    top: 64px;
+}
+/*---------web header-----------------*/
+@media only screen and (min-width: 480px){
+    nav.mobile {
+    
+        display: none;
+    }
+}
+
+nav.web {
+    display: flex;
+    align-content: center;
+}
 .nav-bar {
-    height: 100%;
+    flex-basis: 100%;
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    flex: 1;
 }
 .brand {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
-.brand h1{
+.brand p{
     margin: 0;
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 .brand span{
     font-weight: 400;
@@ -34,12 +64,6 @@ header {
     display: inline-block;
     padding-left: 16px;
 }
-@media only screen and (min-width: 480px) {
-    nav.mobile {
-        display: none;
-    }
-    
-}
 /*----------mobile header-------------*/
 @media only screen and (max-width: 480px) {
     nav.web {
@@ -48,14 +72,14 @@ header {
     
     nav.mobile {
         height: 64px;
-        width: 100%;
+        flex-basis: 100%;
         
     }
     .mobile ul {
         padding-left: 0;
         width: 100%;
         display: inline-flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: baseline;
         
     }
@@ -64,4 +88,166 @@ header {
         padding: 0;
     }
     
+}
+
+/*--------------end header-----------*/
+
+
+
+/*-------------begin banner-----------*/
+.banner {
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+    display: flex;
+}
+.banner-left {
+    padding: 32px 24px;
+    flex-basis: 60%;
+    overflow: hidden;
+}
+.banner-left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.banner-right {
+    flex-basis: 25%;
+    flex-shrink: 2;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-right h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: darkslategray ;
+}
+.banner-right p {
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+    color: darkslategray ;
+}
+.banner-right a {
+    width: 100%;
+    background-color: darkslategray;
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        flex-direction: column;
+    }
+    .banner-left {
+        padding: 0;
+        flex-basis: 100%;
+    }
+
+    .banner-right {
+        padding: 32px 16px;
+       
+    }
+}
+
+/*-------------end banner-----------*/
+/*-------------begin infomation-----------*/
+.information {
+    width: 100%;
+}
+
+
+.container-web {
+    display: flex;
+}
+.left {
+    min-width: 60%;
+}
+
+.image-container {
+    padding: 32px 24px;
+    width: 100%;
+    overflow: hidden;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.left h2{
+    font-size: 1.2rem;
+    padding: 0;
+    padding-left: 24px;
+
+}
+.left p{
+    font-size: 0.8rem;
+    padding: 24px 0 0 24px;
+
+
+}
+
+.right {
+    min-width: 40%;
+    margin-top: 32px;
+}
+
+.web .event-cards  {
+
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid  rgb(211, 211, 211);
+
+}
+
+.course-image {
+    padding: 16px 16px;
+    max-width: 35%;
+    overflow: hidden;
+}
+.course-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#guest {
+    background-color: rgb(211, 211, 211);
+}
+
+@media only screen and (max-width: 480px){
+    .container-web {
+    
+        display: none;
+        
+    }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .course-image-mobile {
+        padding: 16px 16px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .course-image-mobile img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .mobile .text-container {
+        padding: 64px 16px;
+    }
+}
+@media only screen and (min-width: 480px){
+    .container-mobile {
+    
+        display: none;
+        width: 100%;
+        
+    }
+    
+
 }
