@@ -23,11 +23,11 @@ body {
 
 
 #landscape {
-    @include parallax-background("resources/media/1.jpg")
+    @include parallax-background("/resources/media/1.jpg")
 }
 
 #monkeys {
-    @include parallax-background("resources/media/2.jpg")
+    @include parallax-background("/resources/media/2.jpg")
 }
 
 #landscape,

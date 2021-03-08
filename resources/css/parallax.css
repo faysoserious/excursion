@@ -7,12 +7,12 @@ body {
 }
 
 #landscape {
-  background: url("https://github.com/faysoserious/excursion/blob/1712334bc8e53663274fa901aa945ff92827c07d/resources/media/1.jpg") no-repeat center center fixed;
+  background: url("/resources/media/1.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
 #monkeys {
-  background: url("https://github.com/faysoserious/excursion/blob/1712334bc8e53663274fa901aa945ff92827c07d/resources/media/2.jpg") no-repeat center center fixed;
+  background: url("/resources/media/2.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
