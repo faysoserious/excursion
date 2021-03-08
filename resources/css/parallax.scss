@@ -1,3 +1,6 @@
+---
+---
+
 $parallax-height: 100vh;
 $center-margin: 0px auto;
 @mixin background-size($size) {
@@ -22,11 +25,11 @@ body {
 
 
 #landscape {
-    @include parallax-background("/resources/media/1.jpg")
+    @include parallax-background("resources/media/1.jpg")
 }
 
 #monkeys {
-    @include parallax-background("/resources/media/2.jpg")
+    @include parallax-background("resources/media/2.jpg")
 }
 
 #landscape,
